@@ -3,8 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
-import Home from './Components/Home.jsx';
-import Page404 from './Components/Page404.jsx';
+import Home from './HomePageComponents/Home.jsx';
+import Page404 from './ProjectComponents/Page404.jsx';
 
 const reactRouter = createBrowserRouter([
   {
