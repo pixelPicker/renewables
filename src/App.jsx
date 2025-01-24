@@ -1,9 +1,14 @@
 import { useState } from 'react'
+import Header from './Components/Header'
+import { Outlet } from 'react-router'
 
 function App() {
 
   return (
-    <h1 className='bg-slate-300 uppercase'>Heellloeew!</h1>
+    <>
+      <Header />
+      <Outlet />
+    </>
   )
 }
 
