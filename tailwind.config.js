@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         Montserrat: ['Montserrat', 'Arial'],
+        MontserratBold: ['MontserratBold', 'Arial'],
         Nunito: ['Nunito', 'Arial'],
       }
     },
