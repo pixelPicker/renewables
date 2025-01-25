@@ -5,7 +5,7 @@ function Hero() {
   return (
     <>
       <section className="max-h-screen grid grid-cols-5">
-      <div className="flex flex-col col-span-2 pl-32 gap-5 justify-center">
+      <div className="flex flex-col col-span-2 pl-16 gap-5 justify-center">
         <h1 className="font-MontserratBold text-5xl max-w-1/3 text-slate-700">
           Renewable Energy Is Not the Future <br></br><span className="text-green-700">— It’s Now</span>
         </h1>
