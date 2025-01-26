@@ -8,6 +8,7 @@ function App() {
     <>
       <Header />
       <Outlet />
+      {/* //TODO - add chatbot here */}
     </>
   )
 }

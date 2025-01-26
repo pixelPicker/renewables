@@ -7,7 +7,7 @@ import { MdArrowOutward } from "react-icons/md";
 function CTA() {
   return (
     <section className=" bg-gray-200 p-16 flex flex-col items-center justify-items-center gap-8">
-      <h1 className="w-1/2 text-center font-MontserratBold text-4xl text-gray-700 pb-8">
+      <h1 className="w-1/2 text-center font-MontserratBold text-4xl pb-8">
         Imagine. Act. Transform. Join Us in Building a Greener Tomorrow!
       </h1>
       <div>
