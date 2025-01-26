@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router";
 function Header() {
   return (
-    <div className="sticky top-0 left-0 backdrop-blur-xl flex justify-between py-4 px-32 items-center font-Montserrat">
+    <div className="sticky top-0 left-0 z-50 backdrop-blur-xl flex justify-between py-4 px-32 items-center font-Montserrat">
       <h2 className="text-2xl font-bold">Kitty</h2>
       <nav>
         <ul className="flex gap-6">

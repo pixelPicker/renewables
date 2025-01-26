@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./Hero";
 import CTA from "./CTA";
 import Info from "./Info";
+import ROICalculator from "./ROICalculator";
 function Home() {
   return (
     <>
@@ -9,6 +10,7 @@ function Home() {
       <CTA />
       {/* TODO - add the quiz component here. */}
       <Info />
+      <ROICalculator />
     </>
   )
 }
