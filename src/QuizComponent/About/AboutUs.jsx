@@ -25,7 +25,7 @@ function AboutUs() {
           <div className="card border-2 border-white  rounded-md p-4 shadow-2xl bg-white h-[40vh] w-[20vw] flex justify-center flex-col items-center">
               <div className="img h-[150px] w-[150px] rounded-full overflow-hidden bg-yellow-500  ">
                 <img
-                  src="./src/QuizComponent/images/pfp.jpg"
+                  src="./src/QuizComponent/images/dhiraj.jpg"
                   alt=""
                   className="h-full w-full hover:scale-150 duration-500"
                 />
@@ -58,7 +58,7 @@ function AboutUs() {
             <div className="card border-2 border-white  rounded-md p-4 shadow-2xl bg-white h-[40vh] w-[20vw] flex justify-center flex-col items-center">
               <div className="img h-[150px] w-[150px] rounded-full overflow-hidden bg-yellow-500  ">
                 <img
-                  src="./src/QuizComponent/images/pfp.jpg"
+                  src="./src/QuizComponent/images/carlton.jpg"
                   alt=""
                   className="h-full w-full hover:scale-150 duration-500"
                 />
@@ -91,7 +91,7 @@ function AboutUs() {
             <div className="card border-2 border-white  rounded-md p-4 shadow-2xl bg-white h-[40vh] w-[20vw] flex justify-center flex-col items-center">
               <div className="img h-[150px] w-[150px] rounded-full overflow-hidden bg-yellow-500  ">
                 <img
-                  src="./src/QuizComponent/images/pfp.jpg"
+                  src="./src/QuizComponent/images/dhiraj.jpg"
                   alt=""
                   className="h-full w-full hover:scale-150 duration-500"
                 />
@@ -127,7 +127,7 @@ function AboutUs() {
            <div className="card border-2 border-white  rounded-md p-4 shadow-2xl bg-white h-[40vh] w-[20vw] flex justify-center flex-col items-center">
               <div className="img h-[150px] w-[150px] rounded-full overflow-hidden bg-yellow-500  ">
                 <img
-                  src="./src/QuizComponent/images/pfp.jpg"
+                  src="./src/QuizComponent/images/yash.jpg"
                   alt=""
                   className="h-full w-full hover:scale-150 duration-500"
                 />
@@ -191,7 +191,7 @@ function AboutUs() {
             <div className="card border-2 border-white  rounded-md p-4 shadow-2xl bg-white h-[40vh] w-[20vw] flex justify-center flex-col items-center">
               <div className="img h-[150px] w-[150px] rounded-full overflow-hidden bg-yellow-500  ">
                 <img
-                  src="./src/QuizComponent/images/pfp.jpg"
+                  src="./src/QuizComponent/images/dhiraj.jpg"
                   alt=""
                   className="h-full w-full hover:scale-150 duration-500"
                 />
