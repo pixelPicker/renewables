@@ -32,9 +32,9 @@ let Quiz = () => {
 
   return (
     <>
-      <div className="container h-[100vh] w-full flex justify-center items-center">
+      <div className="container font-Nunito h-[100vh] w-full flex justify-center items-center">
         <div className="quizBox h-[78vh] w-[60vw] bg-blue-300 rounded">
-          <h1 className="text-3xl font-serif font-semibold text-center p-2 my-3">
+          <h1 className="text-3xl font-MontserratBold font-semibold text-center p-2 my-3">
             QUIZ
           </h1>
           {showScore ? (

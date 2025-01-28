@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import CTA from "./CTA";
 import Info from "./Info";
 import ROICalculator from "./ROICalculator";
+import Quiz from "../QuizComponent/Quiz/Quiz";
 function Home() {
   return (
     <>
@@ -10,7 +11,9 @@ function Home() {
       <CTA />
       {/* TODO - add the quiz component here. */}
       <Info />
+      <Quiz />
       <ROICalculator />
+      
     </>
   )
 }
