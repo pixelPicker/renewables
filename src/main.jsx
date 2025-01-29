@@ -18,7 +18,7 @@ const reactRouter = createBrowserRouter([
       // { path: 'blog', element: <Blog /> },
       // { path: 'projects', element: <Projects /> },
       // { path: 'case studies', element: <CaseStudies /> },
-      // { path: 'about', element: <About /> },
+
       {path:'about' ,element:<AboutUs/>},
       {path:'quiz',element:<Quiz/>}
     ]

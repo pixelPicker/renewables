@@ -1,232 +1,134 @@
 import React from "react";
 
-function AboutUs() {
-  return (
-    <>
-      <div className="mainContainer h-full w-full flex justify-center items-center bg-gray-50 ">
-        <div className="profileCard h-[100%] w-[70%]  py-4  ">
-         <div className="header flex justify-center items-center">
-         <h1 className="text-4xl text-green-600 text-center p-3 my-2 ">
-            Meet our Team Member
-          </h1>
+const teamMembers = [
+  {
+    name: "Dhiraj Woli",
+    image: "./src/QuizComponent/images/dhiraj.jpg",
+    // role: "Full Stack Developer",
+    social: {
+      twitter: "#",
+      instagram: "#",
+      github: "#",
+    }
+  },
+  {
+    name: "Carlton",
+    image: "./src/QuizComponent/images/carlton.jpg",
+    // role: "UI/UX Designer",
+    social: {
+      twitter: "#",
+      instagram: "#",
+      github: "#",
+    }
+  },
+  {
+    name: "Rahul jain",
+    image: "./src/QuizComponent/images/dhiraj.jpg",
+    // role: "Backend Developer",
+    social: {
+      twitter: "#",
+      instagram: "#",
+      github: "#",
+    }
+  },
+  {
+    name: "Yash",
+    image: "./src/QuizComponent/images/yash.jpg",
+    // role: "Frontend Developer",
+    social: {
+      twitter: "#",
+      instagram: "#",
+      github: "#",
+    }
+  },
+  {
+    name: "Hrithik",
+    image: "./src/QuizComponent/images/hrithik.jpg",
+    // role: "DevOps Engineer",
+    social: {
+      twitter: "#",
+      instagram: "#",
+      github: "#",
+    }
+  },
+  {
+    name: "Hareesh",
+    image: "./src/QuizComponent/images/dhiraj.jpg",
+    // role: "QA Engineer",
+    social: {
+      twitter: "#",
+      instagram: "#",
+      github: "#",
+    }
+  }
+];
+
+const TeamCard = ({ member }) => (
+  <div className="group">
+    <div className="card bg-white rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+      <div className="relative">
+        <div className="img h-[150px] w-[150px] mx-auto rounded-full overflow-hidden bg-gradient-to-r from-green-400 to-blue-500 p-1">
+          <img
+            src={member.image}
+            alt={member.name}
+            className="h-full w-full object-cover rounded-full transform transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-blue-500/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
       
-          <video
-  src="./src/QuizComponent/Images/renewable-energy.mp4"
-  loop
-  muted
-  autoPlay
-  className="w-[90px] rounded-full border-white border-2 shadow-inner"
-></video>
-
+      <div className="text-center mt-4 space-y-2">
+        <h3 className="text-xl font-bold text-gray-800">{member.name}</h3>
+        <p className="text-sm text-gray-600 font-medium">{member.role}</p>
         
-         </div>
-          <div className="profile h-[90%] w-[90%] m-auto flex justify-center items-center gap-8  flex-col  p-4">
-          <div className="top flex justify-evenly w-full gap-8">
-          <div className="card border-2 border-white  rounded-md p-4 shadow-2xl bg-white h-[40vh] w-[20vw] flex justify-center flex-col items-center">
-              <div className="img h-[150px] w-[150px] rounded-full overflow-hidden bg-yellow-500  ">
-                <img
-                  src="./src/QuizComponent/images/dhiraj.jpg"
-                  alt=""
-                  className="h-full w-full hover:scale-150 duration-500"
-                />
-              </div>
-              <h1 className="text-xl font-medium font-serif text-center p-2 ">
-                Dhiraj Woli
-              </h1>
-              <div className="logos gap-2 flex items-center justify-center">
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-twitter-x-line text-xl hover:text-blue-600  duration-200"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-instagram-line text-xl  hover:text-red-600  duration-200"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-github-line text-xl  hover:text-purple-600  duration-200 "></i>
-                  </a>
-                </span>
-              </div>
-            </div>
-
-            <div className="card border-2 border-white  rounded-md p-4 shadow-2xl bg-white h-[40vh] w-[20vw] flex justify-center flex-col items-center">
-              <div className="img h-[150px] w-[150px] rounded-full overflow-hidden bg-yellow-500  ">
-                <img
-                  src="./src/QuizComponent/images/carlton.jpg"
-                  alt=""
-                  className="h-full w-full hover:scale-150 duration-500"
-                />
-              </div>
-              <h1 className="text-xl font-medium font-serif text-center p-2">
-                Carlton 
-              </h1>
-              <div className="logos gap-2 flex items-center justify-center">
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-twitter-x-line text-xl hover:text-blue-600  duration-200"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-instagram-line text-xl  hover:text-red-600  duration-200"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-github-line text-xl  hover:text-purple-600  duration-200 "></i>
-                  </a>
-                </span>
-              </div>
-            </div>
-
-            <div className="card border-2 border-white  rounded-md p-4 shadow-2xl bg-white h-[40vh] w-[20vw] flex justify-center flex-col items-center">
-              <div className="img h-[150px] w-[150px] rounded-full overflow-hidden bg-yellow-500  ">
-                <img
-                  src="./src/QuizComponent/images/dhiraj.jpg"
-                  alt=""
-                  className="h-full w-full hover:scale-150 duration-500"
-                />
-              </div>
-              <h1 className="text-xl font-medium font-serif text-center p-2">
-                Rahul jain
-              </h1>
-              <div className="logos gap-2 flex items-center justify-center">
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-twitter-x-line text-xl hover:text-blue-600  duration-200"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-instagram-line text-xl  hover:text-red-600  duration-200"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-github-line text-xl  hover:text-purple-600  duration-200 "></i>
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-
-
-           <div className="bottom w-full flex justify-evenly gap-8">
-           <div className="card border-2 border-white  rounded-md p-4 shadow-2xl bg-white h-[40vh] w-[20vw] flex justify-center flex-col items-center">
-              <div className="img h-[150px] w-[150px] rounded-full overflow-hidden bg-yellow-500  ">
-                <img
-                  src="./src/QuizComponent/images/yash.jpg"
-                  alt=""
-                  className="h-full w-full hover:scale-150 duration-500"
-                />
-              </div>
-              <h1 className="text-xl font-medium font-serif text-center p-2">
-                Yash
-              </h1>
-              <div className="logos gap-2 flex items-center justify-center">
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-twitter-x-line text-xl hover:text-blue-600  duration-200"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-instagram-line text-xl  hover:text-red-600  duration-200"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-github-line text-xl  hover:text-purple-600  duration-200 "></i>
-                  </a>
-                </span>
-              </div>
-            </div>
-            <div className="card border-2 border-white  rounded-md p-4 shadow-2xl bg-white h-[40vh] w-[20vw] flex justify-center flex-col items-center">
-              <div className="img h-[150px] w-[150px] rounded-full overflow-hidden bg-yellow-500  ">
-                <img
-                  src="./src/QuizComponent/images/hrithik.jpg"
-                  alt=""
-                  className="h-full w-full hover:scale-150 duration-500"
-                />
-              </div>
-              <h1 className="text-xl font-medium font-serif text-center p-2">
-                Hrithik 
-              </h1>
-              <div className="logos gap-2 flex items-center justify-center">
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-twitter-x-line text-xl hover:text-blue-600  duration-200"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-instagram-line text-xl  hover:text-red-600  duration-200"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-github-line text-xl  hover:text-purple-600  duration-200 "></i>
-                  </a>
-                </span>
-              </div>
-            </div>
-            <div className="card border-2 border-white  rounded-md p-4 shadow-2xl bg-white h-[40vh] w-[20vw] flex justify-center flex-col items-center">
-              <div className="img h-[150px] w-[150px] rounded-full overflow-hidden bg-yellow-500  ">
-                <img
-                  src="./src/QuizComponent/images/dhiraj.jpg"
-                  alt=""
-                  className="h-full w-full hover:scale-150 duration-500"
-                />
-              </div>
-              <h1 className="text-xl font-medium font-serif text-center p-2">
-               Hareesh
-              </h1>
-              <div className="logos gap-2 flex items-center justify-center">
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-twitter-x-line text-xl hover:text-blue-600  duration-200"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-instagram-line text-xl  hover:text-red-600  duration-200"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="">
-                    {" "}
-                    <i className="ri-github-line text-xl  hover:text-purple-600  duration-200 "></i>
-                  </a>
-                </span>
-              </div>
-            </div>
-
-           </div>
-
-          </div>
+        <div className="flex justify-center space-x-4 pt-2">
+          <a href={member.social.twitter} className="transform transition-transform hover:scale-125 hover:text-blue-500">
+            <i className="ri-twitter-x-line text-xl"></i>
+          </a>
+          <a href={member.social.instagram} className="transform transition-transform hover:scale-125 hover:text-pink-500">
+            <i className="ri-instagram-line text-xl"></i>
+          </a>
+          <a href={member.social.github} className="transform transition-transform hover:scale-125 hover:text-purple-500">
+            <i className="ri-github-line text-xl"></i>
+          </a>
         </div>
       </div>
-    </>
+    </div>
+  </div>
+);
+
+function AboutUs() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16 space-y-4">
+          <div className="flex items-center justify-center gap-4">
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+              Meet Our Team
+            </h1>
+            <video
+              src="./src/QuizComponent/Images/renewable-energy.mp4"
+              loop
+              muted
+              autoPlay
+              className="w-16 h-16 rounded-full border-2 border-white shadow-lg object-cover"
+            />
+          </div>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+          We are a team of students passionate about web development, collaborating to build meaningful and user-friendly projects. Through this website, we aim to apply our learning, enhance our skills, and create something valuable for our college community.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {teamMembers.map((member, index) => (
+            <TeamCard 
+              key={index} 
+              member={member}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
 
