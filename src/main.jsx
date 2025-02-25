@@ -9,6 +9,7 @@ import AboutUs from './QuizComponent/About/AboutUs.jsx'
 import Quiz from './QuizComponent/Quiz/Quiz.jsx'
 import UpcomingEvents from './Upcoming/Upcoming.jsx'
 import CaseStudies from './Casestudy/Casestudy.jsx'
+import Blog from './blog/blog.jsx'
 const reactRouter = createBrowserRouter([
   {
     path: '/',
@@ -16,11 +17,10 @@ const reactRouter = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       //! Uncomment this only when you implement the pages
-      // { path: 'blog', element: <Blog /> },
+      { path: 'blog', element: <Blog /> },
       // { path: 'projects', element: <Projects /> },
       { path: 'casestudy', element: <CaseStudies /> },
 {path:"upcoming",element:<UpcomingEvents/>},
-
       {path:'about' ,element:<AboutUs/>},
       {path:'quiz',element:<Quiz/>}
     ]
