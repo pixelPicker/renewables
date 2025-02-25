@@ -7,7 +7,8 @@ import Home from './HomePageComponents/Home.jsx';
 import Page404 from './ProjectComponents/Page404.jsx';
 import AboutUs from './QuizComponent/About/AboutUs.jsx'
 import Quiz from './QuizComponent/Quiz/Quiz.jsx'
-
+import UpcomingEvents from './Upcoming/Upcoming.jsx'
+import CaseStudies from './Casestudy/Casestudy.jsx'
 const reactRouter = createBrowserRouter([
   {
     path: '/',
@@ -17,7 +18,8 @@ const reactRouter = createBrowserRouter([
       //! Uncomment this only when you implement the pages
       // { path: 'blog', element: <Blog /> },
       // { path: 'projects', element: <Projects /> },
-      // { path: 'case studies', element: <CaseStudies /> },
+      { path: 'casestudy', element: <CaseStudies /> },
+{path:"upcoming",element:<UpcomingEvents/>},
 
       {path:'about' ,element:<AboutUs/>},
       {path:'quiz',element:<Quiz/>}
