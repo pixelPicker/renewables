@@ -50,7 +50,7 @@ const InputFields = ({
 ) => {
 
   return (
-    <div className="flex flex-col gap-3 items-start my-4">
+    <div className="flex flex-col gap-3 items-center sm:items-start my-4">
 
       <div>
         <label htmlFor="systemCost" className="font-Nunito">System Cost </label>
@@ -70,7 +70,7 @@ const InputFields = ({
         <input type="numeric" onChange={(e) => setAnnualUsage(e.target.value)} name="annualUsage" id="annualUsage" className="bg-gray-100/20 border-2 border-gray-100/50 active:bg-gray-100/40 focus-within:bg-gray-100/40 outline-none py-3 px-4 mt-1 rounded-lg text-black font-Nunito placeholder:text-gray-600/75" placeholder="10000" />
       </div>
       <EnergyDropDown setEnergyType={(value) => setEnergyType(value)} />
-      <button onClick={() => calc()} className="bg-gray-100/20 mt-2 hover:bg-gray-100/30 active:bg-gray-100/50 border-2 border-gray-100/50 rounded-lg w-full font-Nunito py-3">Check</button>
+      <button onClick={() => calc()} className="bg-gray-100/20 mt-2 px-10 sm:px-0 hover:bg-gray-100/30 active:bg-gray-100/50 border-2 border-gray-100/50 rounded-lg w-full font-Nunito py-3">Check</button>
     </div>
   );
 }
@@ -100,7 +100,7 @@ function ROICalculator() {
       case 2:
         savingsPercentage = 60;
         break;
-      case 2:
+      case 3:
         savingsPercentage = 40;
         break;
       default:
@@ -113,20 +113,20 @@ function ROICalculator() {
   }
 
   return (
-    <section className="relative py-16 px-32 before:content[''] before:top-0 before:left-0 before:w-full before:h-full before:absolute before:bg-center before:blur-[1px] before:bg-cover before:bg-[url('assets/images/abstract_bg_2.jpg')]">
+    <section className="relative py-8 sm:py-16 px-4 sm:px-8 lg:px-32 before:content[''] before:top-0 before:left-0 before:w-full before:h-full before:absolute before:bg-center before:blur-[1px] before:bg-cover before:bg-[url('assets/images/abstract_bg_2.jpg')]">
       <div className="relative bg-gray-300/40 backdrop-blur-[4px] border-2 p-8 border-gray-50/70 w-full shadow-xl rounded-2xl grid justify-center items-center gap-x-4 gap-y-8">
 
-        <div className="flex justify-around items-center">
-          <h1 className="text-5xl w-2/3 justify-self-end font-MontserratBold ">
+        <div className="sm:flex justify-around items-center">
+          <h1 className="text-3xl sm:text-4xl sm:w-2/3 py-4 sm:py-0 justify-self-end font-MontserratBold ">
             Calculate your Green Gains
           </h1>
-          <p className="font-Nunito text-xl pl-16">
+          <p className="font-Nunito text-xl sm:pl-16">
             Discover the financial and environmental benefits of switching to renewable energy. Use our ROI calculator to estimate your savings and returns over time.
           </p>
         </div>
         <div className="border-[2px] bg-gray-100/40 rounded-full w-full col-span-2 h-2 shadow-lg border-gray-50/50"></div>
 
-        <div className="flex justify-around">
+        <div className="flex flex-col sm:items-stretch items-center sm:flex-row justify-around">
           <InputFields
             setSystemCost={((value) => setSystemCost(value))}
             setEnergyType={((value) => setEnergyType(value))}
@@ -134,17 +134,17 @@ function ROICalculator() {
             setAnnualUsage={((value) => setAnnualUsage(value))}
             calc={() => calculateValues()}
           />
-          <div className="border-[2px] bg-gray-100/40 rounded-full w-2 border-gray-50/50"></div>
-          <div className="flex flex-col justify-around">
+          <div className="border-[2px] bg-gray-100/40 rounded-full w-full sm:w-2 border-gray-50/50"></div>
+          <div className="flex flex-col items-center mt-4 sm:mt-0 gap-2 sm:gap-0 justify-around">
 
-            <div className="py-3 px-8 font-Nunito bg-gray-100/20 border-2 border-gray-100/50 rounded-lg">
-              <p className="text-2xl pb-3">Annual Savings</p>
-              <h1 className="text-5xl text-center">{annualSavings ? annualSavings : "00"}</h1>
+            <div className="py-3 px-8 w-full sm:w-auto font-Nunito bg-gray-100/20 border-2 border-gray-100/50 rounded-lg">
+              <p className="text-2xl text-center pb-3">Annual Savings</p>
+              <h1 className="text-5xl text-center">{annualSavings ? "₹ " + annualSavings : "00"}</h1>
             </div>
 
-            <div className="py-3 px-8 font-Nunito bg-gray-100/20 border-2 border-gray-100/50 rounded-lg">
-              <p className="text-2xl pb-3">Payback Period</p>
-              <h1 className="text-5xl text-center">{paybackPeriod ? paybackPeriod : "00"}</h1>
+            <div className="py-3 px-8 w-full sm:w-auto font-Nunito bg-gray-100/20 border-2 border-gray-100/50 rounded-lg">
+              <p className="text-2xl text-center pb-3">Payback Period</p>
+              <h1 className="text-5xl text-center">{paybackPeriod ? paybackPeriod + " yrs" : "00"}</h1>
             </div>
           </div>
         </div>
