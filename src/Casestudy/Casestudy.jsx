@@ -38,7 +38,7 @@ const CaseStudyCard = ({ study }) => {
 
 const CaseStudies = () => {
   return (
-    <div className="max-w-3xl mx-auto !p-6 space-y-4 bg-blue-100 border border-blue-300 rounded-lg">
+    <div className="max-w-3xl mx-auto !p-6 space-y-4 bg-blue-100 border border-blue-300 sm:rounded-lg">
       <h2 className="text-2xl font-bold text-blue-700">Case Studies & Success Stories</h2>
       <div className="grid gap-4">
         {caseStudies.map((study) => (

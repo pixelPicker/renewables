@@ -49,7 +49,7 @@ function Blog() {
   return (
     <div className="container min-w-full !pt-20 !pb-10">
       <h1 className="text-3xl font-bold text-center !mb-6">Exploring Renewable Energy</h1>
-      <div className="grid !px-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="sm:grid !sm:px-16 sm:grid-cols-2 lg:grid-cols-3 sm:gap-6">
         {blogPosts.map((post, index) => (
           <div key={index} className='hover:scale-102 rounded-lg bg-blue-50 transition-all !p-6'>
             <img className='min-h-70 max-h-70 w-full min-w-full brightness-90 rounded-lg shadow-lg object-cover !mb-4' src={post.image} alt={post.title} />
