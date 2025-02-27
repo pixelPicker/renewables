@@ -10,7 +10,7 @@ function Info() {
   }
   return (
     <section className="bg-gray-200 sm:min-h-screen sm:grid sm:grid-cols-2 px-4 md:px-24 xl:px-48 py-8 md:py-16 gap-8">
-      <div className="bg-[url('assets/images/rec_3.jpg')] sm:block hidden bg-center bg-cover"></div>
+      <div className="bg-[url('./assets/images/rec_3.jpg')] sm:block hidden bg-center bg-cover"></div>
 
       <div className="lg:w-2/3 flex flex-col bg-black gap-[0.1rem]">
         {/* //* Add content for the cards  */}

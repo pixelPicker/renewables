@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <header className="sticky top-0 left-0 z-50 backdrop-blur-xl flex justify-between sm:py-4 md:px-16 items-center font-Montserrat">
-      <img src="assets/images/reflux_logo.png" alt="Reflux logo" className="aspect-16/9 w-32" />
+      <img src="./assets/images/reflux_logo.png" alt="Reflux logo" className="aspect-16/9 w-32" />
       <nav className="hidden sm:block">
         <ul className="flex gap-6">
           <NavLink

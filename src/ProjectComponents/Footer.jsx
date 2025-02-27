@@ -6,7 +6,7 @@ function Footer() {
     <footer>
       <div className="flex flex-col sm:flex-row sm:justify-between py-8 px-4 sm:px-16 lg:px-32 sm:items-center">
         <div className="flex flex-col sm:items-start">
-          <img src="assets/images/reflux_logo.png" alt="Reflux logo" className="aspect-16/9 w-32" />
+          <img src="./assets/images/reflux_logo.png" alt="Reflux logo" className="aspect-16/9 w-32" />
         </div>
         <div className="flex flex-col sm:flex-row sm:gap-8">
           <Link to={""} className="font-Montserrat hover:border-black transition-all duration-300 p-2 border-transparent border-b-2">Home</Link>

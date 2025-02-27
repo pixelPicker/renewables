@@ -21,7 +21,7 @@ function Hero() {
           </Link>
         </div>
       </div>
-      <img src="assets\images\rec_2.jpg" alt="renewable energy" className="aspect-3/2 col-span-3" />
+      <img src="./assets/images/rec_2.jpg" alt="renewable energy" className="aspect-3/2 col-span-3" />
     </section>
     </>
   );
