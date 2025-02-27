@@ -12,7 +12,6 @@ function Home() {
       <Info />
       <Quiz />
       <ROICalculator />
-      
     </>
   )
 }

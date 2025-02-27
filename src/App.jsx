@@ -17,8 +17,10 @@ const Layout = () => {
     <>
       <Header />
       <main>
-        <Outlet /> {/* This is where child routes will be rendered */}
+        <Outlet />
       </main>
+      <Chatbot />
+      <Footer />
     </>
   );
 };
