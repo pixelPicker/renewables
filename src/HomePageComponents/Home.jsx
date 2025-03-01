@@ -8,10 +8,10 @@ function Home() {
   return (
     <>
       <Hero />
-      <CTA />
       <Info />
       <Quiz />
       <ROICalculator />
+      <CTA />
     </>
   )
 }

@@ -13,10 +13,10 @@ function Hero() {
           Expand your understanding of renewable energy and its impact today
         </h1>
         <div className="flex justify-center md:justify-start mb-8 gap-4">
-          <Link className="bg-black hover:bg-gray-800 active:bg-gray-700 font-Nunito text-white px-4 py-3 text-sm text-center rounded-lg " to='/'>
-            Visit Store
+          <Link to={'blog'} className="bg-black hover:bg-gray-800 active:bg-gray-700 font-Nunito text-white px-4 py-3 text-sm text-center rounded-lg ">
+            Start your project
           </Link>
-          <Link className="outline-2 outline outline-black font-Nunito px-4 py-3 text-sm text-center rounded-lg " to='/'>
+          <Link to={'projects'} className="outline-2 outline outline-black font-Nunito px-4 py-3 text-sm text-center rounded-lg ">
             Read More
           </Link>
         </div>
