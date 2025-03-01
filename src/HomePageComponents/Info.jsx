@@ -24,20 +24,13 @@ function Info() {
             className="flex justify-between items-center"
           >
             <h1 className="font-MontserratBold text-2xl">
-              Lorem ipsum dolor sit.
+            The Importance of Renewable Energy
             </h1>
             {currentOpenTab == 0 ? <MdCloseFullscreen /> : <RxHamburgerMenu />}
           </div>
           {currentOpenTab == 0 ? (
             <p className="pt-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quos,
-              ipsum nemo iste aut, sapiente eveniet officia, nesciunt
-              voluptatibus sunt veniam facilis error impedit laboriosam
-              molestiae obcaecati nulla nostrum aliquid tempora. Molestias ex,
-              facere maxime voluptatibus fugit vel non consequuntur. Iusto fuga
-              debitis perferendis dolores sequi optio animi, ratione ex,
-              repellendus, nihil unde. Inventore corporis quibusdam optio
-              eligendi, mollitia blanditiis!
+              Renewable energy is essential for combating climate change and building a sustainable future. By harnessing natural resources like solar, wind, and hydropower, we can reduce our reliance on fossil fuels and lower greenhouse gas emissions. Transitioning to clean energy not only helps protect the environment but also promotes energy security, creates green jobs, and boosts economic growth. Embracing renewable energy today ensures a cleaner, healthier planet for future generations. Let's power our world sustainably!
             </p>
           ) : (
             <span />
@@ -54,20 +47,14 @@ function Info() {
             className="flex justify-between items-center"
           >
             <h1 className="font-MontserratBold text-2xl">
-              Lorem ipsum dolor sit.
+            Clean Energy: The Path to a Greener World
+            
             </h1>
             {currentOpenTab == 1 ? <MdCloseFullscreen /> : <RxHamburgerMenu />}
           </div>
           {currentOpenTab == 1 ? (
             <p className="pt-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quos,
-              ipsum nemo iste aut, sapiente eveniet officia, nesciunt
-              voluptatibus sunt veniam facilis error impedit laboriosam
-              molestiae obcaecati nulla nostrum aliquid tempora. Molestias ex,
-              facere maxime voluptatibus fugit vel non consequuntur. Iusto fuga
-              debitis perferendis dolores sequi optio animi, ratione ex,
-              repellendus, nihil unde. Inventore corporis quibusdam optio
-              eligendi, mollitia blanditiis!
+              Renewable energy is the key to a sustainable and environmentally friendly future. By utilizing solar, wind, and geothermal power, we can dramatically reduce our carbon footprint. This shift not only combats climate change but also enhances energy security, lowers pollution, and provides long-term economic benefits. As technology advances, renewable energy becomes more accessible and efficient, making it easier for individuals and businesses to adopt. Together, we can build a cleaner, healthier planet for future generations.
             </p>
           ) : (
             <span />
@@ -84,20 +71,14 @@ function Info() {
             className="flex justify-between items-center"
           >
             <h1 className="font-MontserratBold text-2xl">
-              Lorem ipsum dolor sit.
+            Why We Need to Embrace Renewable Energy
+            
             </h1>
             {currentOpenTab == 2 ? <MdCloseFullscreen /> : <RxHamburgerMenu />}
           </div>
           {currentOpenTab == 2 ? (
             <p className="pt-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quos,
-              ipsum nemo iste aut, sapiente eveniet officia, nesciunt
-              voluptatibus sunt veniam facilis error impedit laboriosam
-              molestiae obcaecati nulla nostrum aliquid tempora. Molestias ex,
-              facere maxime voluptatibus fugit vel non consequuntur. Iusto fuga
-              debitis perferendis dolores sequi optio animi, ratione ex,
-              repellendus, nihil unde. Inventore corporis quibusdam optio
-              eligendi, mollitia blanditiis!
+              Shifting to renewable energy sources like solar, wind, and hydropower is crucial to creating a sustainable world. These clean energy options help reduce greenhouse gas emissions, mitigate climate change, and ensure a more secure and reliable energy future. By embracing renewable technologies, we can reduce pollution, improve public health, and stimulate green job growth. Renewable energy provides endless opportunities for a cleaner, more sustainable future. Let’s make the shift to renewable energy today for a better tomorrow.
             </p>
           ) : (
             <span />

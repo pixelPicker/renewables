@@ -3,7 +3,7 @@ import React from "react";
 const teamMembers = [
   {
     name: "Dhiraj Woli",
-    image: "./src/QuizComponent/images/dhiraj.jpg",
+    image: "./assets/images/dhiraj.jpg",
     // role: "Full Stack Developer",
     social: {
       twitter: "#",
@@ -13,7 +13,7 @@ const teamMembers = [
   },
   {
     name: "Carlton",
-    image: "./src/QuizComponent/images/carlton.jpg",
+    image: "./assets/images/carlton.jpg",
     // role: "UI/UX Designer",
     social: {
       twitter: "#",
@@ -23,7 +23,7 @@ const teamMembers = [
   },
   {
     name: "Rahul jain",
-    image: "./src/QuizComponent/images/dhiraj.jpg",
+    image: "./assets/images/dhiraj.jpg",
     // role: "Backend Developer",
     social: {
       twitter: "#",
@@ -33,7 +33,7 @@ const teamMembers = [
   },
   {
     name: "Yash",
-    image: "./src/QuizComponent/images/yash.jpg",
+    image: "./assets/images/yash.jpg",
     // role: "Frontend Developer",
     social: {
       twitter: "#",
@@ -43,7 +43,7 @@ const teamMembers = [
   },
   {
     name: "Hrithik",
-    image: "./src/QuizComponent/images/hrithik.jpg",
+    image: "./assets/images/hrithik.jpg",
     // role: "DevOps Engineer",
     social: {
       twitter: "#",
@@ -53,7 +53,7 @@ const teamMembers = [
   },
   {
     name: "Hareesh",
-    image: "./src/QuizComponent/images/dhiraj.jpg",
+    image: "./assets/images/dhiraj.jpg",
     // role: "QA Engineer",
     social: {
       twitter: "#",
@@ -107,7 +107,7 @@ function AboutUs() {
               Meet Our Team
             </h1>
             <video
-              src="./src/QuizComponent/Images/renewable-energy.mp4"
+              src="./assets/images/renewable-energy.mp4"
               loop
               muted
               autoPlay
