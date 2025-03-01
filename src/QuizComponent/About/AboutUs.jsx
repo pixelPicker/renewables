@@ -23,7 +23,7 @@ const teamMembers = [
   },
   {
     name: "Rahul jain",
-    image: "./assets/images/dhiraj.jpg",
+    image: "./assets/images/Rahul.jpg",
     // role: "Backend Developer",
     social: {
       twitter: "#",
@@ -53,7 +53,7 @@ const teamMembers = [
   },
   {
     name: "Hareesh",
-    image: "./assets/images/dhiraj.jpg",
+    image: "./assets/images/Harish.jpg",
     // role: "QA Engineer",
     social: {
       twitter: "#",

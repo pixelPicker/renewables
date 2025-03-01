@@ -11,6 +11,8 @@ import UpcomingEvents from "./Upcoming/Upcoming.jsx";
 import CaseStudies from "./Casestudy/Casestudy.jsx";
 import Blog from "./blog/blog.jsx";
 import Projects from "./DIYProject/Projects.jsx";
+import ReactGA from 'react-ga4'
+
 
 const Layout = () => {
   return (
@@ -26,6 +28,13 @@ const Layout = () => {
 };
 
 function App() {
+
+  useEffect(() => {
+    ReactGA.initialize(import.meta.env.VITE_GA_TRACKING_ID);
+    // Send pageview with a custom path
+    ReactGA.send({ hitType: "pageview", page: "/", title: "Landing Page" });
+}, [])
+
   return (
     <HashRouter>
       <Routes>
